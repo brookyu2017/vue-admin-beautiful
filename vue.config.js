@@ -130,13 +130,13 @@ module.exports = {
         .plugin('banner')
         .use(Webpack.BannerPlugin, [`${webpackBanner}${time}`])
         .end()
-      config.module
-        .rule('images')
-        .use('image-webpack-loader')
-        .loader('image-webpack-loader')
-        .options({
-          bypassOnDebug: true,
-        })
+        // config.module
+        // .rule('images')
+        // .use('image-webpack-loader')
+        // .loader('image-webpack-loader')
+        // .options({
+        //   bypassOnDebug: true,
+        // })
         .end()
     })
 
